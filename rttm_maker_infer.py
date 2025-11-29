@@ -19,7 +19,7 @@ except ImportError:
 
 # Imports from your existing project files
 from model import X_Base_E2E_LD, X_Attention_E2E_LD
-from data_load import get_atten_mask 
+from data_load_without_wandb import get_atten_mask 
 
 # --- Helper Functions (from JER/DER script) ---
 
