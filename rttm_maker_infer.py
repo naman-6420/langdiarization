@@ -44,7 +44,7 @@ def predictions_to_segments(predictions, frame_duration_ms=200):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_audio', type=str, required=True)
-    parser.add_argument('--ground_truth_tsv', type=str, required=True)
+    parser.add_argument('--ground_truth_tsv', type=str, required=False, default=None)
     parser.add_argument('--model_path', type=str, required=True)
     parser.add_argument('--model_type', type=str, required=True, choices=['base', 'attention'])
     parser.add_argument('--w2v_path', type=str, required=True)
